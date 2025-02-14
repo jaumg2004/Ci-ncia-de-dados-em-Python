@@ -25,6 +25,9 @@ if dados['media'] >= 50:
 else:
     print('RP\n')
 
+print(f'Nome do aluno: {dados['nome']}')
+print(f'Média do aluno: {dados['media']}')
+
 print('Exercicio 4')
 nomes = []
 pesos = []
