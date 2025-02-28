@@ -70,7 +70,7 @@ else:
 print('Exercicio 5')
 
 np.random.seed(100)
-matrix = np.random.randint(0, 50, (2,2))
+matrix = np.random.randint(0, 50, (4,4))
 
 matrix_row = np.mean(matrix, axis=1)
 matrix_column = np.mean(matrix, axis=0)
