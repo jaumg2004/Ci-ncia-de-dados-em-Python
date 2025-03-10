@@ -4,7 +4,7 @@ data = np.loadtxt(r'C:\Users\Jaum\Downloads\space.csv', delimiter=';', dtype='st
 
 print('Exercício 1')
 rows = data.shape[0]
-status_mission_column = data[:, 7]
+status_mission_column = data[1:, 7]
 data_success = status_mission_column[status_mission_column == 'Success']
 print(f'Porcentagem de missões que foram um sucesso: {data_success.size * 100.0/(rows-1):.2f}%\n')
 
