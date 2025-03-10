@@ -10,7 +10,6 @@ print(f'Porcentagem de missões que foram um sucesso: {data_success.size * 100.0
 
 print('Exercício 2')
 cost_mission_column = data[1:, 6]
-cost_mission_column = np.where(cost_mission_column == '', '0', cost_mission_column)
 cost_mission_column = cost_mission_column.astype(float)
 data_cost = cost_mission_column[cost_mission_column > 0]
 print(f'Média do valor das missões em milhões: {data_cost.sum(dtype=float)/data_cost.size:.2f}\n')
