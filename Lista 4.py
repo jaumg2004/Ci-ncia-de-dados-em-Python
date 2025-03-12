@@ -3,10 +3,7 @@ import numpy as np
 data = np.loadtxt(r'C:\Users\Jaum\Downloads\space.csv', delimiter=';', dtype='str', encoding='utf-8')
 
 print('Exercício 1')
-rows = data.shape[0]
-status_mission_column = data[1:, 7]
-data_success = status_mission_column[status_mission_column == 'Success']
-print(f'Porcentagem de missões que foram um sucesso: {data_success.size * 100.0/(rows-1):.2f}%\n')
+print(f'Porcentagem de missões que foram um sucesso: {np.mean(data[1:, 7] == 'Success') * 100:.2f}%\n')
 
 print('Exercício 2')
 cost_mission_column = data[1:, 6]
