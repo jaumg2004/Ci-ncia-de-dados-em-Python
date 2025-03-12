@@ -24,8 +24,7 @@ details_cost = "; ".join(space_x_details[np.where(space_x_cost == max(space_x_co
 print(f'As missões mais caras da SpaceX foram: {details_cost}\n')
 
 print('Exercício 5')
-company = np.unique(company_column)
-company_count = [np.sum(company_column == comp) for comp in company]
+company, company_count = np.unique(company_column, return_counts=True)
 print('Empresas que já realizaram missões no espaço e quantidade de missões\n')
 for comp, count in zip(company, company_count):
     print(f'Nome: {comp} ; Missões: {count}')
