@@ -6,10 +6,8 @@ print('Exercício 1')
 print(f'Porcentagem de missões que foram um sucesso: {np.mean(data[1:, 7] == 'Success') * 100:.2f}%\n')
 
 print('Exercício 2')
-cost_mission_column = data[1:, 6]
-cost_mission_column = cost_mission_column.astype(float)
-data_cost = cost_mission_column[cost_mission_column > 0]
-print(f'Média do valor das missões em milhões: {np.mean(data_cost):.2f}\n')
+cost_mission_column = data[1:, 6].astype(float)
+print(f'Média do valor das missões em milhões: {np.mean(cost_mission_column[cost_mission_column > 0]):.2f}\n')
 
 print('Exercício 3')
 location_column = data[:, 2]
