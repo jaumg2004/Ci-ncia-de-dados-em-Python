@@ -20,7 +20,7 @@ location_USA = np.char.find(location_column, 'USA')
 print(f'Quantidade de missões realizadas nos EUA: {location_USA[location_USA != -1].size}\n')
 
 print('Exercício 4')
-details_column = data[:, 4]
+details_column = data[1:, 4]
 company_column = data[1:, 1]
 space_x = np.where(company_column == 'SpaceX')
 space_x_cost = cost_mission_column[space_x]
