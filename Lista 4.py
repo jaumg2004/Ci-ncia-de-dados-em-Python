@@ -10,7 +10,8 @@ cost_mission_column = data[1:, 6].astype(float)
 print(f'Média do valor das missões em milhões: {np.mean(cost_mission_column[cost_mission_column > 0]):.2f}\n')
 
 print('Exercício 3')
-location_USA = np.char.find(data[:, 2], 'USA')
+location_column = data[:, 2]
+location_USA = np.char.find(location_column, ' USA')
 tam = np.sum(location_USA != -1)
 print(f'Quantidade de missões realizadas nos EUA: {tam}\n')
 
@@ -28,7 +29,6 @@ company, company_count = np.unique(company_column, return_counts=True)
 print('Empresas que já realizaram missões no espaço e quantidade de missões\n')
 for comp, count in zip(company, company_count):
     print(f'Nome: {comp} ; Missões: {count}')
-
 
 
 
