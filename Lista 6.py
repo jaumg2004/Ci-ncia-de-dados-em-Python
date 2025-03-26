@@ -23,7 +23,7 @@ print(group_region['Literacy (%)'].mean())
 print('\nExercício 4')
 
 noCoast = data[data['Coastline (coast/area ratio)'] == 0]
-diretorio = os.path.join(r'C:\Users\Jaum\Downloads', 'noCoast.csv')
+diretorio = os.path.join(r'C:\Users\Jaum\Downloads\noCoast.csv')
 noCoast.to_csv(diretorio, sep=';')
 print(f'Arquivo salvo em: {diretorio}\n')
 
