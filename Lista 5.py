@@ -22,11 +22,11 @@ print('Exercício 5')
 series2Anos = seriesAno2 + 2*seriesAno_dif
 print(series2Anos.idxmax())
 
-print('Exercício 6')
-
 df = pd.DataFrame(index=['A', 'B', 'C', 'D', 'E'],
                   columns=['W', 'X', 'Y', 'Z'],
                   data=np.random.randint(1, 50, [5, 4]))
+
+print('Exercício 6')
 
 print(df['X'][df['X'] < 30].mean(), '\n')
 
